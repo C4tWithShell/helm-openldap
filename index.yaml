@@ -3,7 +3,7 @@ entries:
   openldap-stack-ha:
   - apiVersion: v2
     appVersion: 2.6.9
-    created: "2025-04-21T17:21:25.127839+03:00"
+    created: "2025-04-21T22:47:23.468993+03:00"
     dependencies:
     - condition: ltb-passwd.enabled
       name: ltb-passwd
@@ -34,6 +34,6 @@ entries:
     sources:
     - https://github.com/jp-gouin/helm-openldap
     urls:
-    - https://c4twithfish.github.io/helm-openldap/openldap-stack-ha-4.3.3.tgz
+    - https://c4twithshell.github.io/helm-openldap/openldap-stack-ha-4.3.3.tgz
     version: 4.3.3
-generated: "2025-04-21T17:21:25.124113+03:00"
+generated: "2025-04-21T22:47:23.465507+03:00"
