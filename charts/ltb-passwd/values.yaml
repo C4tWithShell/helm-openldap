@@ -36,7 +36,7 @@ ingress:
   #   - ssl-ldap.local
 
 ## Configure Service Account
-serviceAccountName: openldap
+serviceAccountName: ""
 
 ## Configure Security Context
 podSecurityContext:

@@ -77,6 +77,11 @@ The following table lists the configurable parameters of the phpLDAPadmin chart 
 | `ingress.tls`                                                               | Ingress TLS configuration                                                                                          | `[]`                            |
 | **Init Containers**                                                         |
 | `initContainers`                                                            | Init containers to add to the application                                                                          | `[]`                            |
+| **Service Account**                                                         |
+| `serviceAccountName`                                                        | Service account name to use                                                                                        | ` `                             |
+| **Security Context**                                                        |                                                                                                                                                      |
+| `podSecurityContext`                                                        | Enabled OPENLDAP  pods' Security Context                                                                          | `false`                          |
+| `containerSecurityContext`                                                  | Set OPENLDAP  pod's Security Context fsGroup                                                                      | `false`                          |
 | **Volume Mounts**                                                           |
 | `volumeMounts`                                                              | Additional volumeMounts to the application main container                                                          | `[]`                            |
 | **Volumes**                                                                 |
