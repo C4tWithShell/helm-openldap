@@ -1,37 +1,9 @@
 apiVersion: v1
 entries:
-  common:
-  - annotations:
-      category: Infrastructure
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 2.16.1
-    created: "2025-04-21T17:14:00.894157+03:00"
-    description: A Library Helm Chart for grouping common logic between bitnami charts.
-      This chart is not deployable by itself.
-    digest: ecfb0608e9623e975fb20b9839d695d65d59601f4dd0df7b9a9e093187b0c924
-    home: https://bitnami.com
-    icon: https://bitnami.com/downloads/logos/bitnami-mark.png
-    keywords:
-    - common
-    - helper
-    - template
-    - function
-    - bitnami
-    maintainers:
-    - name: VMware, Inc.
-      url: https://github.com/bitnami/charts
-    name: common
-    sources:
-    - https://github.com/bitnami/charts
-    type: library
-    urls:
-    - https://c4twithfish.github.io/helm-openldap/charts/charts/common-2.16.1.tgz
-    version: 2.16.1
   openldap-stack-ha:
   - apiVersion: v2
     appVersion: 2.6.9
-    created: "2025-04-21T17:14:00.893615+03:00"
+    created: "2025-04-21T17:21:25.127839+03:00"
     dependencies:
     - condition: ltb-passwd.enabled
       name: ltb-passwd
@@ -62,6 +34,6 @@ entries:
     sources:
     - https://github.com/jp-gouin/helm-openldap
     urls:
-    - https://c4twithfish.github.io/helm-openldap/charts/openldap-stack-ha-4.3.3.tgz
+    - https://c4twithfish.github.io/helm-openldap/openldap-stack-ha-4.3.3.tgz
     version: 4.3.3
-generated: "2025-04-21T17:14:00.88966+03:00"
+generated: "2025-04-21T17:21:25.124113+03:00"
