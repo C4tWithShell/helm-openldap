@@ -35,6 +35,33 @@ ingress:
   #   hosts:
   #   - ssl-ldap.local
 
+## Configure Service Account
+serviceAccountName: openldap
+
+## Configure Security Context
+podSecurityContext:
+  enabled: false
+#     enabled: true
+#     runAsUser: 1001
+#     runAsGroup: 1001
+#     runAsNonRoot: true
+#     fsGroup: 1001
+#     fsGroupChangePolicy: "OnRootMismatch"   
+containerSecurityContext:
+  enabled: false
+#     enabled: true
+#     runAsUser: 1001
+#     runAsGroup: 1001
+#     runAsNonRoot: true
+#     seccompProfile:
+#       type: RuntimeDefault
+#     privileged: false
+#     procMount: Default
+#     allowPrivilegeEscalation: false
+#     capabilities:
+#       drop:
+#         - ALL
+
 # -- Init containers to add to the pod
 ## Note: Supports use of custom Helm templates
 initContainers: []

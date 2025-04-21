@@ -21,6 +21,10 @@ spec:
         app: {{ template "phpldapadmin.name" . }}
         release: {{ .Release.Name }}
     spec:
+      serviceAccountName: {{ .Values.serviceAccountName }}
+      {{- if .Values.podSecurityContext.enabled }}
+      securityContext: {{- omit .Values.podSecurityContext "enabled" | toYaml | nindent 8 }}
+      {{- end }}
       {{- include "phpldapadmin.imagePullSecrets" . | nindent 6 }}
       {{- if .Values.initContainers }}
       initContainers:
@@ -32,6 +36,9 @@ spec:
       - name: {{ .Chart.Name }}
         image: {{ include "phpldapadmin.image" . }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
+        {{- if .Values.containerSecurityContext.enabled }}
+        securityContext: {{- omit .Values.containerSecurityContext "enabled" | toYaml | nindent 10 }}
+        {{- end }}   
         ports:
         - name: http
           containerPort: 80
