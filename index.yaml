@@ -3,7 +3,7 @@ entries:
   openldap-stack-ha:
   - apiVersion: v2
     appVersion: 2.6.9
-    created: "2025-04-21T22:47:23.468993+03:00"
+    created: "2025-04-22T16:31:47.850114+03:00"
     dependencies:
     - condition: ltb-passwd.enabled
       name: ltb-passwd
@@ -19,7 +19,7 @@ entries:
       - bitnami-common
       version: ~2
     description: Community developed LDAP software
-    digest: a130bc52cdfc0bc516b02cd99685e8ecd42b5b95f1319e47bde5d307cd28cc74
+    digest: cf0542f061c463e1909c50975b0c10fab767ab14c25e05850657c73ea8def919
     home: https://www.openldap.org
     icon: https://raw.githubusercontent.com/jp-gouin/helm-openldap/master/logo.png
     keywords:
@@ -34,6 +34,40 @@ entries:
     sources:
     - https://github.com/jp-gouin/helm-openldap
     urls:
-    - https://c4twithshell.github.io/helm-openldap/openldap-stack-ha-4.3.3.tgz
+    - https://c4twithfish.github.io/helm-openldap/openldap-stack-ha-4.3.3.tgz
     version: 4.3.3
-generated: "2025-04-21T22:47:23.465507+03:00"
+  - apiVersion: v2
+    appVersion: 2.6.7
+    created: "2025-04-22T16:31:47.84805+03:00"
+    dependencies:
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: ~2
+    description: Community developed LDAP software
+    digest: 6c7992301a5ee0cdd6d9a8fbda1ee163680f68824fb09468069f1ad84d9e16e6
+    home: https://www.openldap.org
+    icon: https://raw.githubusercontent.com/jp-gouin/helm-openldap/master/logo.png
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    - high availability
+    maintainers:
+    - name: Vladimir Shelkovnikov
+    name: openldap-stack-ha
+    sources:
+    - https://github.com/jp-gouin/helm-openldap
+    urls:
+    - https://c4twithfish.github.io/helm-openldap/openldap-stack-ha-4.2.6.tgz
+    version: 4.2.6
+generated: "2025-04-22T16:31:47.842134+03:00"
