@@ -3,7 +3,7 @@ entries:
   openldap-stack-ha:
   - apiVersion: v2
     appVersion: 2.6.9
-    created: "2025-04-22T16:31:47.850114+03:00"
+    created: "2025-04-22T20:33:55.816337+03:00"
     dependencies:
     - condition: ltb-passwd.enabled
       name: ltb-passwd
@@ -19,7 +19,7 @@ entries:
       - bitnami-common
       version: ~2
     description: Community developed LDAP software
-    digest: cf0542f061c463e1909c50975b0c10fab767ab14c25e05850657c73ea8def919
+    digest: a89cda1f32494aff645c0da90a463e9a0919ef135470936b957d253739a053d4
     home: https://www.openldap.org
     icon: https://raw.githubusercontent.com/jp-gouin/helm-openldap/master/logo.png
     keywords:
@@ -27,9 +27,10 @@ entries:
     - openldap
     - iam-stack
     - high availability
+    - secure
     maintainers:
-    - email: jp-gouin@hotmail.fr
-      name: Jean-Philippe Gouin
+    - email: c4twithfish@gmail.com
+      name: Vladimir Shelkovnikov
     name: openldap-stack-ha
     sources:
     - https://github.com/jp-gouin/helm-openldap
@@ -38,7 +39,7 @@ entries:
     version: 4.3.3
   - apiVersion: v2
     appVersion: 2.6.7
-    created: "2025-04-22T16:31:47.84805+03:00"
+    created: "2025-04-22T20:33:55.814162+03:00"
     dependencies:
     - condition: ltb-passwd.enabled
       name: ltb-passwd
@@ -70,4 +71,4 @@ entries:
     urls:
     - https://c4twithshell.github.io/helm-openldap/openldap-stack-ha-4.2.6.tgz
     version: 4.2.6
-generated: "2025-04-22T16:31:47.842134+03:00"
+generated: "2025-04-22T20:33:55.801777+03:00"
