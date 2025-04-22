@@ -34,7 +34,7 @@ entries:
     sources:
     - https://github.com/jp-gouin/helm-openldap
     urls:
-    - https://c4twithfish.github.io/helm-openldap/openldap-stack-ha-4.3.3.tgz
+    - https://c4twithshell.github.io/helm-openldap/openldap-stack-ha-4.3.3.tgz
     version: 4.3.3
   - apiVersion: v2
     appVersion: 2.6.7
@@ -68,6 +68,6 @@ entries:
     sources:
     - https://github.com/jp-gouin/helm-openldap
     urls:
-    - https://c4twithfish.github.io/helm-openldap/openldap-stack-ha-4.2.6.tgz
+    - https://c4twithshell.github.io/helm-openldap/openldap-stack-ha-4.2.6.tgz
     version: 4.2.6
 generated: "2025-04-22T16:31:47.842134+03:00"
